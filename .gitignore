@@ -1,0 +1,7 @@
+SearchModule.xcodeproj/xcuserdata/
+SearchModule.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+SearchModule.xcodeproj/project.xcworkspace/xcuserdata/
