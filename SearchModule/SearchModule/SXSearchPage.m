@@ -44,7 +44,7 @@
         self.searchBar.text = self.keyword;
         [self searchBarSearchButtonClicked:self.searchBar];
     }
-    RAC(self.viewModel,searchText) = RACObserve(self.searchBar ,text);
+//    RAC(self.viewModel,searchText) = RACObserve(self.searchBar ,text);
     [self requestForHotWord];
 }
 

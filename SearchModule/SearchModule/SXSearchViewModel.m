@@ -20,30 +20,32 @@
 
 - (void)setupRACCommand
 {
-    @weakify(self);
+//    @weakify(self);
     _fetchHotWordCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-            @strongify(self);
+//            @strongify(self);
 //            [self requestForHotWordSuccess:^(NSArray *array) {
 //                [subscriber sendNext:array];
 //                [subscriber sendCompleted];
 //            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //                [subscriber sendError:error];
 //            }];
-            return nil;
+             return [RACDisposable disposableWithBlock:^{
+             }];
         }];
     }];
     
     _fetchSearchResultListArray = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-            @strongify(self);
+//            @strongify(self);
 //            [self requestForSearchResultListArrayWithSuccess:^(NSArray *array) {
 //                [subscriber sendNext:array];
 //                [subscriber sendCompleted];
 //            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //                [subscriber sendError:error];
 //            }];
-            return nil;
+             return [RACDisposable disposableWithBlock:^{
+             }];
         }];
     }];
 }
