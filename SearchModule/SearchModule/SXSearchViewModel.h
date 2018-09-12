@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 @interface SXSearchViewModel : NSObject
 
 @property(nonatomic,strong)NSString *searchText;
