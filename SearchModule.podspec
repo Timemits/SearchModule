@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SearchModule"
-  s.version      = "1"
+  s.version      = "1.1"
   s.summary      = "SearchModule."
 
   s.description  = <<-DESC

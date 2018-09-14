@@ -20,7 +20,7 @@
 
 - (void)setupRACCommand
 {
-//    @weakify(self);
+//    @weakify(self); 你好我修改了库
     _fetchHotWordCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 //            @strongify(self);
